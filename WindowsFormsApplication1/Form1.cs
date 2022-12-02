@@ -254,9 +254,25 @@ namespace WindowsFormsApplication1
 
 
             }
+      
 
         private void price_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            btnInsert.Enabled = true;
+            btnInsert.Enabled = true;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
+            btnCancel.Enabled = false;
+            btnConf.Enabled = false;
+            idBox.Enabled = false;
+            nameBox.Enabled = false;
+            autorBox.Enabled = false;
+            priceBox.Enabled = false;
 
         }
     }
