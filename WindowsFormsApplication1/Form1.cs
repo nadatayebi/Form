@@ -151,7 +151,7 @@ namespace WindowsFormsApplication1
             btnUpdate.Enabled = true;
             btnConf.Enabled = false;
             btnCancel.Enabled = false;
-            btnDelete.Enabled = false;
+            btnDelete.Enabled = true;
             idBox.Enabled = true;
             nameBox.Enabled = true;
             autorBox.Enabled = true;
@@ -166,7 +166,7 @@ namespace WindowsFormsApplication1
             idBox.DataBindings.Add("text", comboBox1.DataSource, "ID");
             nameBox.DataBindings.Add("text", comboBox1.DataSource, "name"); ;
             autorBox.DataBindings.Add("text", comboBox1.DataSource, "autor");
-            priceBox.DataBindings.Add("text", comboBox1.DataSource, "price");
+           
             cnx.Close(); 
         }
 
@@ -238,21 +238,27 @@ namespace WindowsFormsApplication1
                 }
            void Enable()
             {
-                btnSelect.Enabled = true;
+                btnSelect.Enabled = false;
                 btnInsert.Enabled = true;
                 btnUpdate.Enabled = true;
-                btnDelete.Enabled = true;
                 btnConf.Enabled = false;
                 btnCancel.Enabled = false;
-                idBox.Enabled = false;
-                nameBox.Enabled = false;
-                autorBox.Enabled = false;
-                priceBox.Enabled = false;
-                comboBox1.Enabled = false;
+                btnDelete.Enabled = true;
+                idBox.Enabled = true;
+                nameBox.Enabled = true;
+                autorBox.Enabled = true;
+                priceBox.Enabled = true;
+                comboBox1.Enabled = true;
+
             }
 
 
             }
-            }
+
+        private void price_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 

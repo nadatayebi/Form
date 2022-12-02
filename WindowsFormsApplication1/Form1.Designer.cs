@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.idBox = new System.Windows.Forms.TextBox();
             this.nameBox = new System.Windows.Forms.TextBox();
@@ -44,19 +43,7 @@
             this.price = new System.Windows.Forms.Label();
             this.autor = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 34);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(624, 231);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnInsert
             // 
@@ -179,9 +166,10 @@
             this.price.AutoSize = true;
             this.price.Location = new System.Drawing.Point(16, 399);
             this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(26, 20);
+            this.price.Size = new System.Drawing.Size(43, 20);
             this.price.TabIndex = 14;
-            this.price.Text = "ID";
+            this.price.Text = "price";
+            this.price.Click += new System.EventHandler(this.price_Click);
             // 
             // autor
             // 
@@ -221,20 +209,16 @@
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.idBox);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.TextBox idBox;
         private System.Windows.Forms.TextBox nameBox;
